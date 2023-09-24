@@ -74,6 +74,7 @@ body{
 /* Styles for the Header, Main, & Footer */
 /* Limits the width, adds a background color and padding, and centers them on the page */
 header, main, footer{
+    display: block;
     padding: 1rem;
     width: calc(1000px - 2rem);
     margin: 0 auto;
@@ -84,6 +85,7 @@ header, main, footer{
 header, footer{
     text-align: center;
     background-color: var(--mint);
+    margin: 0 auto;
 }
 
 /* Navigation Styles */
@@ -96,6 +98,7 @@ nav ul{
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 16px 0;
     gap: 1rem;
     padding: 0;
 }
@@ -119,10 +122,27 @@ nav a:hover{
 main > section{
     padding: 1rem 0;
 }
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+    font-weight: bold;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
 
+}
+h2 {
+    font-size: 1.5em;
+    margin: 19.92px 0;
+}
+h3{
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
 /* Styles for the h2 & h3 tags */
 h2, h3{
     text-align: center;
+    font-weight: bold;
 }
 
 /* Paragraph Styles */
@@ -188,9 +208,14 @@ fieldset{
     grid-template-columns: 0.25fr 6fr 0.25fr 6fr;
     gap: 1rem;
     margin: 1rem 0;
+    border-width: 2px;
+    border-style: groove;
     border-color: var(--red);
 }
-
+legend {
+    display: block;
+    padding: 0 2px;
+}
 /* Code for Custom Radios - Compare to Your zyBook, I added additional code to make these match my form styles */
 input[type=radio] + label {
     cursor: pointer;
@@ -280,4 +305,15 @@ pre code{
 code div{
     padding: 1rem;
     overflow: scroll;
+}
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+figcaption {
+    display: block;
+
 }
